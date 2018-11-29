@@ -20,8 +20,8 @@ class Card extends Component{
                     <div className="card-body">
                     <h5 className="card-title">{this.props.title}</h5>
                     <p className="card-text">{this.props.description}</p>
-                    <p className="card-price">{this.props.price}</p>
-                    <p className="card-quantity">{this.props.quantity}</p>
+                    <p className="card-price">Kaina: {this.props.price} Eur</p>
+                    <p className="card-quantity"> Likutis: {this.props.quantity} </p>
                     <a href={"https://www.malsena.lt/receptas/namine-rugine-duona-su-raugu-duonkepei/"} className="btn btn-primary">Details</a>
                     </div> 
     </div>

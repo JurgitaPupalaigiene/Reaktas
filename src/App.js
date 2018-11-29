@@ -79,6 +79,7 @@ class App extends Component {
   render() {
      return (
         <div className="container-fluid">
+        <h1>Skanios duonos elektronine parduotuve</h1>
         <List list={produktai}/>
       </div>
     );
