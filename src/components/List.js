@@ -8,6 +8,10 @@ import Card from './Card';
 
 class List extends Component{
   render() {
+    var suma=this.props.list
+    .reduce((suma, produktas)=>
+      suma + (produktas.price * produktas.quantity), 0);
+
     var duona= this.props.list
     .filter(card=> card.price<=23)
     .map(card=>{
@@ -23,6 +27,8 @@ class List extends Component{
 })
         return (<div className="row">
         {duona}
+
+        <div>Suma= {suma}</div>
         </div>
         );
   }
