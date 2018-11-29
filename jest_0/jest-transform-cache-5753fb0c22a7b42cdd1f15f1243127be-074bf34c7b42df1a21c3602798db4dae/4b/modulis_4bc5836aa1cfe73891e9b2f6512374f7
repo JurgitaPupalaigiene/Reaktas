@@ -1,0 +1,27 @@
+d8a192f0f368f178be679f065d17754d
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+class Polygon {
+  constructor(height = 2, width = 3) {
+    this.height = height;
+    this.width = width;
+  }
+
+  get area() {
+    return this.calcArea();
+  }
+
+  calcArea() {
+    return this.height * this.width;
+  }
+
+}
+
+var _default = Polygon;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1vZHVsaXMuanMiXSwibmFtZXMiOlsiUG9seWdvbiIsImNvbnN0cnVjdG9yIiwiaGVpZ2h0Iiwid2lkdGgiLCJhcmVhIiwiY2FsY0FyZWEiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7QUFDQSxNQUFNQSxPQUFOLENBQWM7QUFDWkMsRUFBQUEsV0FBVyxDQUFDQyxNQUFNLEdBQUMsQ0FBUixFQUFXQyxLQUFLLEdBQUMsQ0FBakIsRUFBb0I7QUFDN0IsU0FBS0QsTUFBTCxHQUFhQSxNQUFiO0FBQ0EsU0FBS0MsS0FBTCxHQUFhQSxLQUFiO0FBQ0Q7O0FBQ0gsTUFBSUMsSUFBSixHQUFXO0FBQ1AsV0FBTyxLQUFLQyxRQUFMLEVBQVA7QUFDRDs7QUFDREEsRUFBQUEsUUFBUSxHQUFHO0FBQ1QsV0FBTyxLQUFLSCxNQUFMLEdBQWMsS0FBS0MsS0FBMUI7QUFDRDs7QUFWVzs7ZUFZRUgsTyIsInNvdXJjZXNDb250ZW50IjpbIlxuY2xhc3MgUG9seWdvbiB7ICBcbiAgY29uc3RydWN0b3IoaGVpZ2h0PTIsIHdpZHRoPTMpIHtcbiAgICB0aGlzLmhlaWdodCA9aGVpZ2h0O1xuICAgIHRoaXMud2lkdGggPSB3aWR0aDtcbiAgfVxuZ2V0IGFyZWEoKSB7XG4gICAgcmV0dXJuIHRoaXMuY2FsY0FyZWEoKVxuICB9XG4gIGNhbGNBcmVhKCkge1xuICAgIHJldHVybiB0aGlzLmhlaWdodCAqIHRoaXMud2lkdGg7XG4gIH1cbn1cbmV4cG9ydCBkZWZhdWx0ICBQb2x5Z29uOyJdfQ==
