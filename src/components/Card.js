@@ -4,10 +4,7 @@ import PropTypes from 'prop-types';
 const styles={
   card:{
     width:'18rem'
-  },
-  image:{
-    height: '200px'
-  }
+}
 }
 
 
@@ -16,7 +13,7 @@ class Card extends Component{
   render() {
     return (
     <div className="card" style={styles.card}>
-                  <img className="card-img-top" src={this.props.imageURL} alt={this.props.title} style={styles.image}/> 
+                  <img className="card-img-top" src={this.props.imageURL} alt={this.props.title}/> 
                     <div className="card-body">
                     <h5 className="card-title">{this.props.title}</h5>
                     <p className="card-text">{this.props.description}</p>

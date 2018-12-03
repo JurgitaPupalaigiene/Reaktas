@@ -1,3 +1,6 @@
+
+
+
 class Produktas {
     constructor(title, description, price, quantity){
         this.title=title;

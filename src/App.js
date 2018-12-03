@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 //import logo from './logo.svg';
 import './App.css';
 import List from './components/List';
-import nuotraukos from './components/nuotrauka.jpeg';
+import nuotraukos from './components/index.jpg';
 
 
 
@@ -18,7 +18,7 @@ const produktai=[
 
 {
   imageURL: nuotraukos,
-  title: "Rugine duona",
+  title: "Namine duona",
   description:"Senovinis receptas, be mieliu",
   price: 5,
   quantity: 18,
@@ -27,7 +27,7 @@ const produktai=[
 
 {
   imageURL: nuotraukos,
-  title: "Rugine duona",
+  title: "Senoliu duona",
   description:"Senovinis receptas, be mieliu",
   price: 13,
   quantity: 2,
@@ -35,7 +35,7 @@ const produktai=[
 },
 {
   imageURL: nuotraukos,
-  title: "Rugine duona",
+  title: "Ajeru duona",
   description:"Senovinis receptas, be mieliu",
   price: 12,
   quantity: 4,
@@ -43,7 +43,7 @@ const produktai=[
 },
 {
   imageURL: nuotraukos,
-  title: "Rugine duona",
+  title: "Plikyta duona",
   description:"Senovinis receptas, be mieliu",
   price: 23,
   quantity: 14,
@@ -51,7 +51,7 @@ const produktai=[
 },
 {
   imageURL: nuotraukos,
-  title: "Rugine duona",
+  title: "Ukininku duona",
   description:"Senovinis receptas, be mieliu",
   price: 100,
   quantity: 63,
@@ -59,7 +59,7 @@ const produktai=[
 },
 {
   imageURL: nuotraukos,
-  title: "Rugine duona",
+  title: "Balta duona",
   description:"Senovinis receptas, be mieliu",
   price: 90,
   quantity: 3,
@@ -67,7 +67,7 @@ const produktai=[
 },
 {
   imageURL: nuotraukos,
-  title: "Rugine duona",
+  title: "Tikra duona",
   description:"Senovinis receptas, be mieliu",
   price: 78,
   quantity:15,
