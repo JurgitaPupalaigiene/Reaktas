@@ -2,11 +2,9 @@
 
 
 class Produktas {
-    constructor(title, description, price, quantity){
+    constructor(title, price){
         this.title=title;
-        this.description=description;
         this.price=price;
-        this.quantity=quantity;
     }
 
 }
