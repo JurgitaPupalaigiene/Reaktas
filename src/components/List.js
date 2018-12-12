@@ -2,57 +2,35 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Card from './Card';
 
+class List extends Component {
+  renderBreadList() {
+    const list = this.props.list;
 
-
-
-
-class List extends Component{
-  render() {
-    
-    //  var suma=this.props.list
-    // .reduce((suma, produktas)=>
-    // suma + (produktas.price * produktas.quantity), 0);
-
-  
-
-    // var sakinys=this.props.list
-    // .reduce((sakinys, produktas)=>
-    // sakinys + produktas.price +', '+ produktas.quantity);
-    // console.log (sakinys);
-
-
-
-    var duona= this.props.list
-    // .filter(card=> card.price<=23)
-    .map(card=>{
-        return (
-          <Card 
-          imageURL={card.imageURL}
-          title={card.title}
-          description={card.description}
-          price={card.price}
-          quantity={card.quantity}
-          />
-        )}
-      );
-    
-        return (<div className="row">
-          {duona}
-          {/* <div>Suma= {suma}</div> */}
-
-        </div>
-          );
+    return list.map(item => {
+      return (
+        <Card
+          key={item.id}
+          imageURL={item.imageURL}
+          title={item.title}
+          description={item.description}
+          price={item.price}
+          quantity={item.quantity}
+          details={item.details}
+        />
+      )
+    })
   }
-
-
-
-
-
-
-
+  render() {
+    return (
+      <div className="row">
+        {this.renderBreadList()}
+      </div>
+    );
+  }
 }
-List.propTypes={
-  duona: PropTypes.array.isRequired,
+
+List.propTypes = {
+  list: PropTypes.array.isRequired,
 }
 
 

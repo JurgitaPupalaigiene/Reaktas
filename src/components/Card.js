@@ -31,7 +31,7 @@ Card.propTypes={
   description:PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   quantity: PropTypes.number.isRequired,
-  details: PropTypes.array.isRequired
+  details: PropTypes.string.isRequired
 }
 
 export default Card;
