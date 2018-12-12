@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-//import logo from './logo.svg';
 import './App.css';
 import List from './components/List';
 import nuotraukos from './components/index.jpg';
-import Produktas from './Produktas';
-
 
 
 
@@ -77,21 +74,21 @@ const produktai=[
 }
 ]
 
-const produktaiSuKlasem = produktai.map(produktasIsMasyvo => new Produktas(produktasIsMasyvo.title,produktasIsMasyvo.price));
-const produktaiSete = new Set(produktaiSuKlasem);
-const produktaiMape= new Map();
-for ( var i=0; i<produktaiSuKlasem.length; i++){
-produktaiMape.set(i, produktaiSuKlasem[i]);
-}
-const newArray=Array.from(produktaiMape);
+// const produktaiSuKlasem = produktai.map(produktasIsMasyvo => new Produktas(produktasIsMasyvo.title,produktasIsMasyvo.price));
+// const produktaiSete = new Set(produktaiSuKlasem);
+// const produktaiMape= new Map();
+// for ( var i=0; i<produktaiSuKlasem.length; i++){
+// produktaiMape.set(i, produktaiSuKlasem[i]);
+// }
+//const newArray=Array.from(produktaiMape);
 
 // var sakinys= null;
 // for (i=0; i<newArray.length; i++){
 //   sakinys+= newArray[i];
 // }
-var names=produktaiSuKlasem.reduce(function(sum, produktai){
-  return sum +', '+produktai.title;});
-  console.log(names);
+//var names=produktaiSuKlasem.reduce(function(sum, produktai){
+ // return sum +', '+produktai.title;});
+ // console.log(names);
 
 
 // pasinaudojant Array.from iš objektų map'o ir vėl gauti masyvą,
@@ -99,12 +96,12 @@ var names=produktaiSuKlasem.reduce(function(sum, produktai){
 // kurioje būtų prekės title ir kaina
 // Obuolys (1 eur), Samsung (100 eur)
 
-console.log(produktaiSuKlasem);
-console.log(produktaiSete);
-console.log(produktaiMape);
-console.log(newArray);
+// console.log(produktaiSuKlasem);
+// console.log(produktaiSete);
+// console.log(produktaiMape);
+// console.log(newArray);
 
-
+const goProducts = () => this.props.history.push("products");
 
 
 
@@ -114,7 +111,12 @@ class App extends Component {
         <div className="container-fluid">
         <h1>Skanios duonos elektronine parduotuve</h1>
         <List list={produktai}/>
-      </div>
+        <p><button onClick={this.goProducts}
+        className="btn btn-primary"
+        	role="button">
+        		Go to Products
+        	</button></p>
+        </div>
     );
   }
 }
